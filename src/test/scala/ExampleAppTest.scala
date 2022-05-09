@@ -19,6 +19,21 @@ class ExampleAppTest extends AnyFunSpec with EitherValues {
   val playerMove = PlayerMove(player, 1)
 
   describe("Rules") {
+    describe("assessGameProgress") {
+      // turn a matrix into lists for rows / cols and diags
+
+      val line = "rrrrrbbrr000"
+
+      // TODO:
+      // build list of lists when boundary changes
+      // sort list of lists by size
+      // and list > n length is a winner
+//      line.foldLeft(List.empty) {
+//        case ()
+//      }
+
+    }
+
     describe("updateGameBoard"){
       it("should update the correct column") {
         println("Empty board:")
